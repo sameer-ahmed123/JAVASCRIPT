@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrraper">
+        <div class="selections">
+            <div class="color-select">
+                <input type="color" name="" id="COL_INP">
+            </div>
+            <div>
+                <button id="Color">Color Mode</button>
+            </div>
+            <div>
+                <button id="Rainbow">Rainbow Mode</button>
+            </div>
+            <div>
+                <button id="Erase">Erase Mode</button>
+            </div>
+            <div>
+                <button id="Clear">Clear</button>
+            </div>
+            <div style="width:220px;">
+                <input type="range" min="16" max="120" value="16" name="" id="slider">
+                <br>
+                <span id="selector_value" style="margin-left: 5px;"></span> <span>x</span><span id="selector_value2"
+                    style="margin-left: 5px;"></span>
+            </div>
+        </div>
+        <div id="sketch_box" class="sketch_box">
+            <div class="grids"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

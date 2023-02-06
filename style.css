@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+html {
+    user-select: none;
+}
+
+.wrraper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.active {
+    background-color: blue;
+}
+
+.selections {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.color-select {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#COL_INP {
+    height: 150px;
+    width: 150px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+#COL_INP {
+    -webkit-appearance: none !important;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+#COL_INP::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+
+#COL_INP::-webkit-color-swatch-wrapper {
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+}
+
+/* the sketch box */
+.sketch_box {
+    height: 600px;
+    width: 600px;
+    overflow: hidden;
+    display: grid;
+    box-shadow: 10px 10px 700px 0px rgb(60, 52, 59);
+}
+
+button {
+    height: 35px;
+    width: 250px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    border-radius: 15px;
+    font-size: 24px;
+    border: 1px solid rgb(102, 51, 153);
+}
+
+button:hover {
+    scale: 1.03;
+    background-color: rgb(242, 159, 252);
+    cursor: pointer;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 25px;
+}
